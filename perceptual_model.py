@@ -5,6 +5,7 @@ from keras.layers import Flatten, Concatenate
 from keras.applications.vgg16 import VGG16, preprocess_input
 
 
+
 class PerceptualModel(Model):
   """Defines the VGG16 model for perceptual loss."""
 
