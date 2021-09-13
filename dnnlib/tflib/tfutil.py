@@ -23,7 +23,7 @@ TfExpressionEx = Union[TfExpression, int, float, np.ndarray]
 def run(*args, **kwargs) -> Any:
     """Run the specified ops in the default session."""
     assert_tf_initialized()
-    return tf.get_default_session().run(*args, **kwargs)
+    return tf.compat.v1.get_default_session().run(*args, **kwargs)
 
 
 def is_tf_expression(x: Any) -> bool:
