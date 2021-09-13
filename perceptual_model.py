@@ -1,9 +1,8 @@
 """Perceptual module for encoder training."""
 
-from keras.models import Model
-from keras.layers import Flatten, Concatenate
-from keras.applications.vgg16 import VGG16, preprocess_input
-
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Flatten, Concatenate
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 
 
 class PerceptualModel(Model):
